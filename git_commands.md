@@ -74,9 +74,12 @@ e com d maisculo o branch será excluído sem apresenta esta mensagem
 
 * converte o branch corrente deixando igual ao branch master
     * **git reset --hard master**
-* realizar merge com um branch remoto
+
+* realiza diff do branch atual com um branch remoto
     * **git fetch; git diff ..origin/branch_name**
 
+* realiza um merge sem executar o commit (-n) no branch atual, [commit-hash] a hash do commit almejado.
+    * **git cherry-pick -n [commit-hash]**
 
 Inicia um repositorio
 git init
