@@ -83,6 +83,10 @@ e com d maisculo o branch será excluído sem apresenta esta mensagem
 
 * aplicacao de patch
     * **git apply C:\Users\Lenovo\Desktop\cejam\icejam\patches\dev_cris-prestacao.patch --ignore-whitespace --ignore-space-change --reject --whitespace=fix**
+
+* gera uma patch a partir de um commit 
+    * **git format-patch -1 [commit-hash]**
+
     
 Inicia um repositorio
 git init
