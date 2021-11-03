@@ -81,6 +81,9 @@ e com d maisculo o branch será excluído sem apresenta esta mensagem
 * realiza um merge sem executar o commit (-n) no branch atual, [commit-hash] a hash do commit almejado.
     * **git cherry-pick -n [commit-hash]**
 
+* aplicacao de patch
+    * **git apply C:\Users\Lenovo\Desktop\cejam\icejam\patches\dev_cris-prestacao.patch --ignore-whitespace --ignore-space-change --reject --whitespace=fix**
+    
 Inicia um repositorio
 git init
 
