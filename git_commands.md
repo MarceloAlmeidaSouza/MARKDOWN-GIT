@@ -81,8 +81,11 @@ e com d maisculo o branch será excluído sem apresenta esta mensagem
 * realiza um merge sem executar o commit (-n) no branch atual, [commit-hash] a hash do commit almejado.
     * **git cherry-pick -n [commit-hash]**
 
-* realiza um merge sem executar o commit (-n) no branch atual, [commit-hash-older]^..[commit-hash-recently] hash do commit mais antigo (^ opcional) inclusivo (..) até a hash do commit mais recente.
+* realiza um merge sem executar o commit (-n) no branch atual, [commit-hash-older]^..[commit-hash-recently] hash do commit mais antigo (^ opcional inclusivo) (..) até a hash do commit mais recente, ou seja desde do commit mais antigo até o mais atual incluindo todos os commits entre eles.
     * **git cherry-pick -n [commit-hash-older]^..[commit-hash-recently]**
+
+* realiza um merge sem executar o commit (--no-commit), aplica as hashes individualmente o seja, apenas as indicadas. 
+    * **git cherry-pick --no-commit [commit-hash-first] [commit-hash-sencond] [commit-hash-third]**
 
 * aplicacao de patch
     * **git apply C:\Users\Lenovo\Desktop\cejam\icejam\patches\dev_cris-prestacao.patch --ignore-whitespace --ignore-space-change --reject --whitespace=fix**
